@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>
+			The Pygymy Tribe
+		</title>
+
+        <link rel="icon" href="download1.png" type="image/jpg">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+        <style type="text/css">
+        	body{
+        		font-family: 'Titillium Web', sans-serif;
+        		/*background-image: url("background.jpg");*/
+        		background-attachment: fixed;
+        		background-size: cover;
+        		background-repeat: no-repeat;
+        		background-color: #F0FFFF;
+        		font-size: 25px;
+        		margin: 0;
+        	}
+        	p.head1{
+        		text-align: center;
+        		color: black;
+        		font-size: 80px;
+        		background-color: none;
+        		/*background-image: url("background2.jpg");*/
+        		font-family: 'Raleway', sans-serif;
+        		border: thick solid black;
+        		margin-left: 30%;
+        		margin-right: 30%;
+        	}
+
+        	p.head2{
+				text-align: center;
+        		color: black;
+        		text-decoration: underline;
+        		background-color: none;
+        		font-family: 'Roboto Condensed', sans-serif;
+        		border: thick double black;
+				margin-top: 5%;
+				margin-left: 40%;
+				margin-right: 40%;
+				font-size: 40px;
+				position: sticky;
+				top: 0%;
+				z-index: -3;
+			}
+
+        	.topnav {
+			  overflow: hidden;
+			  background-color: lightblue;
+			  font-family: 'Titillium Web', sans-serif;
+			  font-size: 20px;
+			  border: 5px outset #1E90FF;
+			  position: fixed;
+			  z-index: 1;
+			}
+
+			.topnav a {
+			  float: left;
+			  color: blue;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  border-right: thin solid black;
+			}
+
+			.topnav a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+
+			.topnav a.active {
+			  /*background-color: #4CAF50;*/
+			  background-color: #00BFFF;
+			  color: white;
+			}
+			img.logo{
+				float: left;
+			}
+		
+			div.transbox {
+				margin-top: 5%;
+				margin-bottom: 5%;
+				margin-left: 10%;
+				margin-right: 10%;
+				background-color: white;
+				border: 1px solid black;
+				background: rgba(255,255,255,0.7);
+				color: #1E90FF;
+				font-size: 25px;
+			}
+
+			p.p1{
+				margin: 5%;
+			}
+
+			ul.ul1{
+				margin-left: 10%;
+				margin-top: 5%;
+				margin-bottom: 5%;
+				list-style-image: url("tick3.png");
+			}
+
+			p.Ani1{
+				font-family: 'Titillium Web', sans-serif;
+				animation-name: first;
+				animation-duration: 60s;
+				color: blue;
+				background-color: #1E90FF;
+				margin-top: 2%;
+				border: thick outset lightblue;
+			}
+
+			div.topnav2{
+				float: right;
+				position: fixed;
+				margin-left: 70%;
+				margin-right: 0%;
+				z-index: 1;
+			}
+
+			@keyframes first{
+				0%   {background-color: #1E90FF; color: white;}
+				5%  {background-color: darkblue; color: lightblue;}
+				10%  {background-color: lightblue; color: blue;}
+				15% {background-color: lightblue; color: darkblue;}
+				20%   {background-color: #1E90FF; color: white;}
+				25%  {background-color: darkblue; color: lightblue;}
+				30%  {background-color: lightblue; color: blue;}
+				35% {background-color: lightblue; color: darkblue;}
+				40%   {background-color: #1E90FF; color: white;}
+				45%  {background-color: darkblue; color: lightblue;}
+				50%  {background-color: lightblue; color: blue;}
+				55% {background-color: lightblue; color: darkblue;}
+				60%   {background-color: #1E90FF; color: white;}
+				65%  {background-color: darkblue; color: lightblue;}
+				70%  {background-color: lightblue; color: blue;}
+				75% {background-color: lightblue; color: darkblue;}
+				80%   {background-color: #1E90FF; color: white;}
+				85%  {background-color: darkblue; color: lightblue;}
+				90%  {background-color: lightblue; color: blue;}
+				95% {background-color: lightblue; color: darkblue;}
+				100%   {background-color: #1E90FF; color: white;}
+			}
+
+			div.container {
+			  position: relative;
+			  text-align: center;
+			  color: white;
+			}
+
+			div.centered{
+  				position: absolute;
+  				top: 70%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				color: white;
+  				font-size: 90px;
+  				animation-name: second;
+  				animation-duration: 2s;
+  				font-family: 'Roboto Condensed', sans-serif;
+			}
+
+			div.still{
+				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -100%);
+  				color: white;
+  				font-size: 90px;
+  				font-family: 'Roboto Condensed', sans-serif;
+  				white-space: nowrap;
+  				line-height: 0px;
+			}
+
+			div.container img.img1{
+				z-index: -1;
+				height: 500px;
+			}
+
+			@keyframes second{
+				0% {top: 100%}
+				100%{top: 70%}
+			}
+
+			@keyframes third{
+				0% {opacity: 0;}
+				100% {opacity: 1;}
+			}
+
+			* {box-sizing:border-box}
+
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 1000px;
+			  position: relative;
+			  margin: auto;
+			}
+
+			/* Hide the images by default */
+			.mySlides {
+			  display: none;
+			}
+
+			/* Next & previous buttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  margin-top: -5%;
+			  padding: 16px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			  background-color: blue;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 20px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 20px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			  background-color: blue;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+
+			@-webkit-keyframes fade {
+			  from {opacity: .4}
+			  to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  from {opacity: .4}
+			  to {opacity: 1}
+			}
+
+			p.startp{
+				margin-left: 30%;
+				margin-right: 30%;
+			}
+
+			hr.hr1{
+				width: 500px;
+				height: 10px;
+				color: black;
+				background-color: black;
+				margin-top: 0%;
+			}
+        </style>
+	</head>
+	<body>
+			<div class="topnav">
+				<img src="download2.jpg" width="170px" class="logo">
+	  			<a href="Home.html">Home</a>
+	  			<a href="Origin.html">Origins</a>
+	  			<a href="Culture.html">Culture</a>
+	  			<a class="active" href="Jewellery.html">Jewellery by Students</a>	
+			</div>
+			<div class="topnav2">
+				<p class="Ani1" style="float: right;">Welcome to the Parent Walk-in of Class 7B!</p>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="container">
+  				<img src="background4.jpg" alt="blue" style="width:100%;" class="img1">
+  				<div class="still">
+  					<p>Jewellery</p>
+  					<hr class="hr1">
+  				</div>
+  				<div class="centered">
+  					<p>
+  					By Students
+  				</p>
+  				</div>
+  				<!--<img src="arrowi.png" class="arrowi">-->
+			</div>
+		<br>
+			
+		<p class="startp">
+
+		</p>
+
+		<br>
+		<br>
+		<p class="head1"><u>The P</u>ygy<u>my Tribe</u></p>
+		<center>
+			<p class="head2">Jewellery</p>
+		</center>
+
+		<div class="transbox">
+			<p class="p1">
+				<strong><font style="font-size: 100px;">H</font> ere are pictures of Tribal Jewellery made and presented by the students of Class-7B!
+				</strong>
+			</p>	
+
+		<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+			    <div class="numbertext">1 / 13</div>
+			    <img src="IMAGE5.png" style="width:100%">
+			    <div class="text">Vedant Dhingra</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">2 / 13</div>
+			    <img src="IMAGE3.png" style="width:100%">
+			    <div class="text">Riddhika Kotia</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">3 / 13</div>
+			    <img src="IMAGE7.png" style="width:100%">
+			    <div class="text">Vedant Dhingra</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">4 / 13</div>
+			    <img src="IMAGE8.png" style="width:100%">
+			    <div class="text">Renaae Chatterjee</div>
+			  </div>
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+			    <div class="numbertext">5 / 13</div>
+			    <img src="IMAGE1.png" style="width:100%">
+			    <div class="text">Earrings</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">6 / 13</div>
+			    <img src="IMAGE2.png" style="width:100%">
+			    <div class="text">Earrings</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">7 / 13</div>
+			    <img src="IMAGE4.png" style="width:100%">
+			    <div class="text">Necklace</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">8 / 13</div>
+			    <img src="IMAGE6.png" style="width:100%">
+			    <div class="text">Bracelet</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">9 / 13</div>
+			    <img src="IMAGE9.png" style="width:100%">
+			    <div class="text">Necklace</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">10 / 13</div>
+			    <img src="IMAGE10.png" style="width:100%">
+			    <div class="text">Necklace</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">11 / 13</div>
+			    <img src="IMAGE11.png" style="width:100%">
+			    <div class="text">Earrings</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">12 / 13</div>
+			    <img src="IMAGE12.png" style="width:100%">
+			    <div class="text">Bracelet/Ring</div>
+			  </div>
+
+			  <div class="mySlides fade">
+			    <div class="numbertext">13 / 13</div>
+			    <img src="IMAGE13.png" style="width:100%">
+			    <div class="text">Earring</div>
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			  <span class="dot" onclick="currentSlide(6)"></span>
+			  <span class="dot" onclick="currentSlide(7)"></span>
+			  <span class="dot" onclick="currentSlide(8)"></span>
+			  <span class="dot" onclick="currentSlide(9)"></span>
+			  <span class="dot" onclick="currentSlide(10)"></span>
+			  <span class="dot" onclick="currentSlide(11)"></span>
+			  <span class="dot" onclick="currentSlide(12)"></span>
+			  <span class="dot" onclick="currentSlide(13)"></span>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+	</body>
+</html>
